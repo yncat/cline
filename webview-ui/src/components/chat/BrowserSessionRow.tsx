@@ -462,11 +462,13 @@ const BrowserSessionRow = memo((props: BrowserSessionRowProps) => {
 					<div style={paginationButtonGroupStyle}>
 						<VSCodeButton
 							disabled={currentPageIndex === 0 || isBrowsing}
+							aria-label="Go to previous page"
 							onClick={() => setCurrentPageIndex((i) => i - 1)}>
 							Previous
 						</VSCodeButton>
 						<VSCodeButton
 							disabled={currentPageIndex === pages.length - 1 || isBrowsing}
+							aria-label="Go to next page"
 							onClick={() => setCurrentPageIndex((i) => i + 1)}>
 							Next
 						</VSCodeButton>

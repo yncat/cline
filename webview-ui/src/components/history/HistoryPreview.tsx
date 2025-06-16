@@ -136,6 +136,7 @@ const HistoryPreview = ({ showHistoryView }: HistoryPreviewProps) => {
 							<div className="flex items-center justify-center pt-2">
 								<button
 									onClick={() => showHistoryView()}
+									aria-label="View all history"
 									className="cursor-pointer text-center transition-all duration-150 hover:opacity-80 flex items-center gap-1 bg-transparent border-none outline-none focus:outline-none"
 									style={{
 										color: "var(--vscode-descriptionForeground)",

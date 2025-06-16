@@ -197,6 +197,7 @@ export const CheckmarkControl = ({ messageTs, isCheckpointCheckedOut }: Checkmar
 									<VSCodeButton
 										onClick={handleRestoreWorkspace}
 										disabled={restoreWorkspaceDisabled}
+										aria-label="Restore files"
 										style={{
 											cursor: restoreWorkspaceDisabled ? "wait" : "pointer",
 											width: "100%",
@@ -213,6 +214,7 @@ export const CheckmarkControl = ({ messageTs, isCheckpointCheckedOut }: Checkmar
 									<VSCodeButton
 										onClick={handleRestoreTask}
 										disabled={restoreTaskDisabled}
+										aria-label="Restore task only"
 										style={{
 											cursor: restoreTaskDisabled ? "wait" : "pointer",
 											width: "100%",
@@ -226,6 +228,7 @@ export const CheckmarkControl = ({ messageTs, isCheckpointCheckedOut }: Checkmar
 									<VSCodeButton
 										onClick={handleRestoreBoth}
 										disabled={restoreBothDisabled}
+										aria-label="Restore both files and task"
 										style={{
 											cursor: restoreBothDisabled ? "wait" : "pointer",
 											width: "100%",

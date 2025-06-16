@@ -1627,6 +1627,7 @@ const ChatTextArea = forwardRef<HTMLTextAreaElement, ChatTextAreaProps>(
 							/> */}
 							<div
 								data-testid="send-button"
+								aria-label="Send message"
 								className={`input-icon-button ${sendingDisabled ? "disabled" : ""} codicon codicon-send`}
 								onClick={() => {
 									if (!sendingDisabled) {

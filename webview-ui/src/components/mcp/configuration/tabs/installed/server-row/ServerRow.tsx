@@ -199,6 +199,7 @@ const ServerRow = ({
 						<VSCodeButton
 							appearance="icon"
 							title="Restart Server"
+							aria-label="Restart server"
 							onClick={(e) => {
 								e.stopPropagation()
 								handleRestart()
@@ -210,6 +211,7 @@ const ServerRow = ({
 							<VSCodeButton
 								appearance="icon"
 								title="Delete Server"
+								aria-label="Delete server"
 								onClick={(e) => {
 									e.stopPropagation()
 									handleDelete()
